@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+/* start game */
+.control-button{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:rgba(0, 188,212, .8);
+    z-index: 5;
+}
+.control-button span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 400%;
+    user-select: none;
+    border: 3px solid #f6f6f6;
+    padding: 15px;
+    cursor: pointer;
+    color: #f6f6f6;
+    background-color: #031c61;
+    border-radius: 8px;
+    box-shadow: 5px 5px 60px 2px #f6f6f6;
+}
+/*  */
+.info-container{
+    width: 80%;
+    margin: 25px auto 0;
+    background-color: #f6f6f6; 
+    padding: 1em;
+    border: 4px solid #2196f3;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+.memory-game-blocks{
+    display: flex;
+    width: 80%; 
+    flex-wrap: wrap;
+    margin: 1em auto;
+}
+.memory-game-blocks.no-clicking{
+    pointer-events:none;
+}
+.game-block{
+    height:200px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px ;
+} 
+.game-block .front{
+    background-color: #333;
+    line-height: 200px;
+}
+.game-block .front::before{
+    content:'#';
+    color: #2196f3;
+    font-size: 140px;
+    font-weight: 700;
+}
+.game-block .back{
+    background-color: #607d8b;
+    transform: rotateY(180deg);
+}
+.game-block .back img{
+    width:140px;
+    height: 140px;
+    background-size: cover;
+    margin-top:30px;
+}
+.game-block .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility:hidden;
+    border: 5px solid #2196f3;
+}
+.game-block.is-flipped,
+.game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    position: none;
+}

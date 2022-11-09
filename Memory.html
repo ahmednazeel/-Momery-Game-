@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOmery Game</title>
+    <link rel="stylesheet" href="css/Momery.css">
+</head>
+<body>
+    <div class="control-button">
+        <span>start game</span>
+    </div>
+    <div class="info-container">
+        <h3 class="name">
+            hello: <span></span>
+        </h3>
+        <h3 class="tries">
+            wrong tries: <span>0</span>
+        </h3>
+    </div><!--./info-container-->
+    <div class="memory-game-blocks">
+        <div class="game-block" data-technology="mozila">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/brand_mozilla.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>1 -->
+        <div class="game-block"  data-technology="mozila">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/brand_mozilla.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>1 -->
+
+        <div class="game-block" data-technology="css">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/css.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>2 -->
+        <div class="game-block"  data-technology="css">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/css.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>2 -->
+    
+        <div class="game-block" data-technology="flutter">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/flutter.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>3 -->
+        <div class="game-block"  data-technology="flutter">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/flutter.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>3 -->
+    
+        <div class="game-block" data-technology="git">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/git.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>4 -->
+        <div class="game-block"  data-technology="git">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/git.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>4 -->
+
+        <div class="game-block" data-technology="html">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/html.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>5 -->
+        <div class="game-block"  data-technology="html">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/html.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>5 -->
+
+        <div class="game-block" data-technology="js">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/js.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>6 -->
+        <div class="game-block"  data-technology="js">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/js.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>6 -->
+
+        <div class="game-block" data-technology="linkedin">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/linkedin_socialnetwork_17441.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>7 -->
+        <div class="game-block"  data-technology="linkedin">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/linkedin_socialnetwork_17441.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>7 -->
+
+        <div class="game-block" data-technology="node-js">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/node-js.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>8 -->
+        <div class="game-block"  data-technology="node-js">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/node-js.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>8 -->
+
+        <div class="game-block" data-technology="python">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/python.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>9 -->
+        <div class="game-block"  data-technology="python">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/python.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>9 -->
+
+        <div class="game-block" data-technology="vue">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/vue.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>10 -->
+        <div class="game-block"  data-technology="vue">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="images/vue.png" alt="photo-technology in wed developer">
+            </div>
+        </div><!--./game-blocks =>10 -->
+    </div><!--./memory-game-blocks-->
+
+    <audio id="success" src="sound/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="sound/fial.mp3" preload="auto"></audio>
+    <script src="js/Momery.js"></script>
+</body>
+</html>
